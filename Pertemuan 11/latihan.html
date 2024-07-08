@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name = "RK_REPARATION";
+        var bookTitle = "Belajar Pemrograman Javascript";
+        var visitorCount = 30143;
+        var isActive = true;
+        var url = "https://www.instagram.com/";
+
+        var name = "ZT_REPARATION";
+        delete bookTitle;
+        typeof name;
+        typeof visitorCount;
+        typeof isActive;
+
+        alert("Selamat datang di " + name);
+
+        document.write("Nama Situs: " + name + "<br>");
+        document.write("Jumlah Pengunjung: " + visitorCount + "<br>");
+        document.write("Status Aktif: " + isActive + "<br>");
+        document.write("Alamat URL : " + url + "<br>");
+    </script>
+</head>
+<body>
+    <script>
+        alert("Selamat datang di tutorial Javascript");
+    </script>
+    <br>
+    <button onclick="alert('Tombol diklik!')">Klik Saya</button>
+
+    <script>
+        var yakin = confirm("Apakah kamu yakin akan mengunjungi ZT_REPARATION?");
+
+        if (yakin) {
+            window.location = "https://bellputrii.github.io/Belda_PPW_P9/";
+        } else {
+            document.write("Baiklah, tetap disini saja ya kamu :");
+        }
+    </script>
+
+    <script>
+        var nama = prompt("Siapa nama kamu? ", "default");
+        document.write("<p>Hello " + nama + "<p/>");
+    </script>
+
+    <script>
+        var a = 5;
+        var b = 3;
+        var c = a + b;
+        console.log(c);
+        
+        var d = "10" + "2";
+        console.log(d);
+
+        var jumlahView = 12;
+
+        jumlahView += 1;
+        console.log(jumlahView);
+
+        var e = 3;
+        e ++;
+        console.log(e);
+    </script>
+
+    <script>
+        document.write("Mula-mula nilai score...<br>");
+        var score = 100;
+        score += 5;
+        document.write("score = " + score + "<br/>");
+        score -= 2;
+        document.write("score = " + score + "<br/>");
+        score /= 4;
+        document.write("score = " + score + "<br/>");
+        score **= 2;
+        document.write("score = " + score + "<br/>");
+        score %= 3;
+        document.write("score = " + score + "<br/>");
+    </script>
+
+    <br>
+
+    <script>
+        var aku = 20;
+        var kamu = 19;
+
+        var hasil = aku == kamu;
+        document.write(`${aku} == ${kamu} = ${hasil}<br/>`);
+
+        var hasil = aku > kamu;
+        document.write(`${aku} > ${kamu} = ${hasil}<br/>`);
+
+        var hasil = aku >= kamu;
+        document.write(`${aku} >= ${kamu} = ${hasil}<br/>`);
+
+        var hasil = aku < hasil;
+        document.write(`${aku} < ${kamu} = ${hasil}<br/>`);
+
+        var hasil = aku <= kamu;
+        document.write(`${aku} <= ${kamu} = ${hasil}<br/>`);
+
+        var hasil = aku != kamu;
+        document.write(`${aku} != ${kamu} = ${hasil}<br/>`);
+
+        var f = "4" == 4;
+        console.log(f);
+
+        var g = "4" === 4;
+        console.log(g);
+    </script>
+
+<br>
+
+<script>
+    var aku = 20;
+    var kamu = 19;
+
+    // sama dengan
+    var hasil = aku == kamu;
+    document.write(`${aku} == ${kamu} = ${hasil}<br/>`);
+    
+    // lebih besar
+    var hasil = aku > kamu;
+    document.write(`${aku} > ${kamu} = ${hasil}<br/>`);
+    
+    // lebih besar sama dengan
+    var hasil = aku >= kamu;
+    document.write(`${aku} >= ${kamu} = ${hasil}<br/>`);
+    
+    // lebih kecil
+    var hasil = aku < kamu;
+    document.write(`${aku} < ${kamu} = ${hasil}<br/>`);
+    
+    // lebih kecil sama dengan
+    var hasil = aku <= kamu;
+    document.write(`${aku} <= ${kamu} = ${hasil}<br/>`);
+    
+    // tidak sama dengan
+    var hasil = aku != kamu;
+    document.write(`${aku} != ${kamu} = ${hasil}<br/>`);
+</script>
+<br>
+<script>
+    var x = 4;
+    var y = 3;
+
+    // operator bitwise and
+    var hasil = x & y;
+    document.write(`${x} & ${y} = ${hasil}<br/>`);
+
+    // operator bitwise or
+    var hasil = x | y;
+    document.write(`${x} | ${y} = ${hasil}<br/>`);
+
+    // operator bitwise xor
+    var hasil = x ^ y;
+    document.write(`${x} ^ ${y} = ${hasil}<br/>`);
+
+    // operator negasi
+    var hasil = ~x;
+    document.write(`~${x} = ${hasil}<br/>`);
+    
+    // operator bitwise right shift >>
+    var hasil = x >> y;
+    document.write(`${x} >> ${y} = ${hasil}<br/>`);
+
+    // operator bitwise right shift <<
+    var hasil = x << y;
+    document.write(`${x} << ${y} = ${hasil}<br/>`);
+
+    // operator bitwise right shift (unsigned) >>>
+    var hasil = x >>> y;
+    document.write(`${x} >>> ${y} = ${hasil}<br/>`);
+
+</script>
+<br>
+<script>
+    var pertanyaan = confirm("Apakah kamu berumur di atas 18 tahun?")
+
+    var hasil = pertanyaan ? "Selamat datang" : "Kamu tidak boleh di sini";
+    document.write(hasil);
+</script>
+
+
+</body>
+</html>

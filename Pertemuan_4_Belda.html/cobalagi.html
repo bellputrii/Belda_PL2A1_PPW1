@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<a href="#Link ke form!">  Link ke form!</a><br>
+<body>
+    <form method="get">
+        <input type=color>
+        <input type=text><br>
+        <label for="cars">Choose a car: </label>
+        <select id="cars" name="cars">
+            <option value="Volvo">Volvo</option>
+            <option value="Saab">Saab</option>
+            <option value="Audi">Audi</option>
+        </select><br>
+
+        <input type="radio" id="html" name="lalala" value="HTML">
+        <label for="HTML">HTML</label><br>
+
+        <input type="radio" id="html" name="lalala" value="CSS>
+        <label for="CSS">CSS</label><br>
+
+        <input type="radio" id="html" name="lalala" value="Java Script">
+        <label for="Java Script">Java Script</label><br>
+
+        <input type="checkbox" id="vehicle1" name="veehicle1" value="Bike">
+        <label for=vehcle1>I have a bike</label><br>
+
+        <input type="checkbox" id="vehicle2" name="veehicle2" value="Car">
+        <label for=vehcle2>I have a car</label><br>
+
+        <input type="checkbox" id="vehicle3" name="veehicle3" value="Boat">
+        <label for=vehcle3>I have a boat</label><br>
+
+        <textarea name="message" rows="10" cols="30">The cat was playing in the garden
+        </textarea><br><br>
+    
+        <button type="button" onclick="alert('Hello Bell')">Click Me!</button>
+        
+    </form><br>
+
+    <form>
+        <a name="Link ke form!"></a>
+        <input type=color>
+        <input type=text><br>
+        <label for="cars">Choose a car: </label>
+        <select id="cars" name="cars">
+            <option value="Volvo">Volvo</option>
+            <option value="Saab">Saab</option>
+            <option value="Audi">Audi</option>
+        </select><br>
+
+        <input type="radio" id="html" name="lalala" value="HTML">
+        <label for="HTML">HTML</label><br>
+
+        <input type="radio" id="html" name="lalala" value="CSS>
+        <label for="CSS">CSS</label><br>
+
+        <input type="radio" id="html" name="lalala" value="Java Script">
+        <label for="Java Script">Java Script</label><br>
+
+        <input type="checkbox" id="vehicle1" name="veehicle1" value="Bike">
+        <label for=vehcle1>I have a bike</label><br>
+
+        <input type="checkbox" id="vehicle2" name="veehicle2" value="Car">
+        <label for=vehcle2>I have a car</label><br>
+
+        <input type="checkbox" id="vehicle3" name="veehicle3" value="Boat">
+        <label for=vehcle3>I have a boat</label><br>
+
+        <textarea name="message" rows="10" cols="30">The cat was playing in the garden
+        </textarea><br><br>
+    
+        <button type="button" onclick="alert('Hello World')">Click Me!</button>
+        
+    </form><br>
+    <form action="/action page.php">
+        <label for="fname">First Name: </label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="lname">Last Name: </label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+    </form><br>
+    <!-- Atribute Readonly-> bisa dilihat saja tanpa bisa diedit -->
+    <form action="/action page.php">
+        <h4>Readonly</h4>
+        <label for="fname">First Name: </label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+
+        <label for="lname">Last Name: </label><br>
+        <input type="text" id="lname" name="lname" value="Doe" readonly><br>
+    </form><br>
+    <!-- Atribute Disabled -> tidak bisa dimanipulasi-->
+    <form action="/action page.php">
+        <h4>Disabled</h4>
+        <label for="fname">First Name: </label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+
+        <label for="lname">Last Name: </label><br>
+        <input type="text" id="lname" name="lname" value="Doe" disabled><br>
+    </form><br>
+    <!-- Atribute Size _> Mengatur size-->
+    <form action="/action page.php">
+        <h4>Size</h4>
+        <label for="fname">First Name: </label><br>
+        <input type="text" id="fname" name="fname" value="John" size="25"><br>
+
+        <label for="lname">Last Name: </label><br>
+        <input type="text" id="lname" name="lname" value="Doe" size="30"><br>
+    </form><br>
+    <!-- Atribute PlaceHolder -->
+    <form>
+        <h4>PlaceHolder</h4>
+        <label for="phone">Enter a phone number: </label>
+        <input type="text" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]-{3}-[0-9]{3}">
+    </form>
+    <form>
+        <h4>Required</h4>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required autofocus>
+        <button type="button" onclick="alert('Please fill out this field')">Submit</button>
+    </form><br>
+    <!-- Menggambar Kotak dengan SVG, SVG-> Merupakan suatu frame yang didalamnya diagambarkan sesuatu -->
+    <svg width="200" height="200">
+        <rect width="200" height="200"
+        style="fill:bisque ;stroke-width:10;stroke: burlywood ;"></rect>
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="pink"></circle>
+    </svg>
+
+
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.moveTo(0,3);
+        ctx.lineTo(250,100);
+
+        ctx.stroke();
+
+        ctx.font = "30px Arial";
+        ctx.fillText("Iki garis", 220, 150);
+        
+    </script>
+
+    <fieldset>
+        <legend>
+            Informasi Kesehatan: 
+        </legend>
+        <form>
+            Tinggi <input type="text" size="3">
+            Berat <input type="text" size="3">
+        </form>
+    </fieldset>
+
+    <form action="@" method="post" enctype="text/plain">
+        <h3>Form ini mengirim sebuah e-mail ke W3C</h3>
+        Nama<br>
+        <input type="text" name="nama" value="Nama Anda" size="20" maxlength="20">
+        <br>
+        Mail:<br>
+        <input type="text" name="Mail" placeholder="Mail Anda" size="20">
+        <br>
+        Komentar:<br>
+        <textarea type="text" name="Komentar" rows="4" cols="50">Komentar Anda</textarea>
+        <br>
+        tambahan:<br>
+        <input type="text" name="tambahan" value="Tambahkan Anda" size="40" readonly>
+        <br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>

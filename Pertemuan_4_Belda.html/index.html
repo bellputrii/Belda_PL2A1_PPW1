@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Praktikum Formulir</title>
+</head>
+<body style="background-image: url(https://i.pinimg.com/564x/5a/db/c7/5adbc7c403d6af03a1f159560a3e25e5.jpg);">
+    <center>
+        <fieldset style="width: 550px; padding-bottom: 10px; margin: 100px; border: 0; background-color:aliceblue;">
+            <div style="display: flex; align-items: center;">
+                <img src="https://komatik.wg.ugm.ac.id/wp-content/uploads/sites/263/2021/04/cropped-logokomatik-1.png" width="60" style="margin-left: 20px;">
+                <h3 style="margin-left: 100px; line-height: 1.5;">Formulir Pendaftaran Makrab <br> Komunitas Mahasiswa TIK <br> Universitas Gadjah Mada</h3>
+            </div>
+            <form action="daftar.php" method="post" style="text-align: left; margin-left: 20px;">
+                <table>
+                    <tr>
+                        <td><b>Nama Lengkap</b></td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Nama Panggilan</b></td>
+                        <td>:</td>
+                        <td><input type="text" name="nama_panggilan" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td><b>NIM</b></td>
+                        <td>:</td>
+                        <td><input type="text" name="nim" size="40" placeholder="Masukkan Nomor Induk Mahasiswa"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Tanggal Lahir</b></td>
+                        <td>:</td>
+                        <td><input type="date" name="tanggal_lahir" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Fakultas</b></td>
+                        <td>:</td>
+                        <td><input type="text" name="fakultas" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Program Studi</b></td>
+                        <td>:</td>
+                        <td><input type="text" name="program_studi" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td><b>No Hp</b></td>
+                        <td>:</td>
+                        <td><input type="tel" name="no_hp" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td><b>E-mail</b></td>
+                        <td>:</td>
+                        <td><input type="email" name="email" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Transaksi</b></td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="transaksi" value="Lunas"> Lunas
+                            <input type="radio" name="transaksi" value="Angsuran"> Angsuran
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Metode Pembayaran</b></td>
+                        <td>:</td>
+                        <td>
+                            <select id="Metode" name="metode_pembayaran">
+                                <option value="" disabled selected>--select--</option>
+                                <option value="Shopeepay">Shopeepay</option>
+                                <option value="Seabank">Seabank</option>
+                                <option value="Dana">Livin</option>
+                                <option value="Other">Other</option>
+                                <input type="text" name="Other" size="26" placeholder="Other">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Screenshot Pembayaran</b></td>
+                        <td>:</td>
+                        <td><input type="file" name="screenshot_pembayaran"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Transportasi</b></td>
+                        <td>:</td>
+                        <td>
+                            <input type="checkbox" name="transportasi" value="Motor"> Motor
+                            <input type="checkbox" name="transportasi" value="Bus"> Bus
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Profile Instagram</b></td>
+                        <td>:</td>
+                        <td>
+                            <input type="url" name="url_instagram" value="https://www.instagram.com/username/" placeholder="" size="40">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Motto Hidup</b></td>
+                        <td>:</td>
+                        <td><textarea name="motto_hidup" cols="39" rows="3"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <input type="submit" name="Submit" value="Submit" style="background-color:#57CC99; font-size: medium;">
+                            <input type="reset" name="Reset" value="Reset" style="background-color: #D24545; font-size:medium;">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Javascript</title>
+</head>
+<body>
+    <br>
+    <script>
+        console.log("Saya belajar Javascript");
+        document.write("Hello World");
+    </script>
+
+    <a href="#" onclick="alert('kamu hebat')">Klik Aku</a> 
+    <br>
+    <a href="#" onclick="salam()" >Klik Aku</a> 
+<!-- inline -->
+
+    <script>
+        x = "PPW";
+        console.log(x);
+    </script>
+    <!-- embed -->
+
+    <br>
+    <script src="script.js"></script>
+    <!-- eksternal -->
+
+    <h1>Tutorial Javascript untuk Pemula</h1>
+    <div id="hasil-output"></div>
+
+    <br>
+    <script>
+        var hasil = document.getElementById("hasil-output");
+        
+        hasil.innerHTML = "<p>Aku suka javascript</p>";
+    </script>
+    <!-- InnerHTML -->
+</body>
+</html>

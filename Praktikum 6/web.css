@@ -1,0 +1,184 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+}
+
+.header, .footer {
+    background: hsl(210, 46%, 95%);
+}
+
+.aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aside2 {
+    background: hsl(210, 46%, 95%);
+}
+
+.article-info {
+    text-align: left;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Untuk membuat gambar menjadi lingkaran */
+    margin-right: 10px;
+}
+
+.author-details p {
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .share-icon {
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+    cursor: pointer;
+}
+
+.footer .social-icons {
+    display: none;
+}
+    label{
+        background: #fff;
+        height: 50px;
+        width: 150px;
+        border-radius: 35px;
+        line-height: 50px;
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+        color: #0984e3;
+        cursor: pointer;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+    }
+    label:hover{
+    letter-spacing: 1px;
+    }
+    label:before{
+        content: 'Cancel';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #fff;
+        border-radius: 35px;
+        opacity: 0;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ label::before{
+        opacity: 1;
+    }
+    .media-icons{
+        position: absolute;
+        left: 50%;
+        top: -120px;
+        transform: translateX(-50%);
+        background: #fff;
+        width: 140%;
+        height: 110%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 35px;
+        padding: 4px;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+    }
+    #check:checked ~ .media-icons{
+        opacity: 1;
+        pointer-events: auto;
+        top: -84px;
+    }
+    .media-icons::before{
+        content: '';
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 50%;
+        background: #fff;
+        bottom: -9px;
+        transform: translateX(-50%) rotate(45deg);
+        z-index: -1;
+    }
+    .media-icons a{
+        font-size: 22px;
+        color: #0984e3;
+        transition: all 0.3s ease;
+    }
+    .media-icons a:hover{
+        transform: translateY(-2px);
+    }
+    .media-icons a:nth-child(1):hover{
+        color: #426782;
+    }
+    .media-icons a:nth-child(2):hover{
+        color: #1da1f2;
+    }
+    .media-icons a:nth-child(3):hover{
+        color: #e1306c;
+    }
+    .media-icons a:nth-child(4):hover{
+        color: #ff0000;
+    }
+
+/* Aturan media queries untuk perangkat seluler */
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+
+    .aside1 {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside2 {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+        }
+}

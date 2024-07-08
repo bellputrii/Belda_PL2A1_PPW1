@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Membuat Formulir</title>
+</head>
+<body style="background-image: url('https://dif.telkomuniversity.ac.id/wp-content/uploads/2022/12/Screenshot-2022-12-07-154012.png');">
+
+    <center>
+        <fieldset style="width: 300px; background-color:#F6F5F5; padding: 20px;">
+            <form action="daftar.php" method="post" style="text-align: center;"> <h3>Formulir Registrasi Makrab</h3>
+                <div style="margin-bottom: 10px;">
+                    <label for="nama" style="display: inline-block; width: 40%; text-align: right;">Full Name:</label>
+                    <input type="text" id="nama" name="nama" style="width: 50%;"><br>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="confirm_password" style="display: inline-block; width: 40%; text-align: right;">NIM:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" style="width: 50%;"><br>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="payment" style="display: block; width: 43%; text-align: right;">Choose Payment:</label>
+                    <div>
+                        <input type="radio" id="Shopeepay" name="payment" value="Shopeepay">
+                        <label for="Shopeepay">Shopeepay</label>
+                        <input type="radio" id="Gopay" name="payment" value="Gopay">
+                        <label for="Gopay">Gopay</label><br>
+                        <input type="text" id="OtherText" name="OtherText" placeholder="Other Payment"><br>
+                    </div>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="payment" style="display: block; width: 40%; text-align: right;">Lunas/Mencicil:</label>
+                    <select id="payment" name="Lunas" >
+                        <option value="" disabled selected>Select</option>
+                        <option value="Lunas">Lunas</option>
+                        <option value="Mencicil">Mencicil</option>
+                    </select><br>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="bukti";">SS Bukti Pembayaran:</label>
+                    <input type="file" name="bukti" style="width: 50%; ;"><br>
+                </div>
+                <input type="submit" value="Submit" style="background-color: pink;">
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>

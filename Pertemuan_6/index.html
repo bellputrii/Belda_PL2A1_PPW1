@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox</title>
+    <link rel="stylesheet" href="article.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="product">
+            <img src="drawers.jpg" alt="Product Image">
+            <div class="description">
+            <p><b>Shift the overall look and feel by adding these wonderful touches to furniture in your home</b></p>
+            <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+                I’ve got some simple tips to help you make any room feel complete</p>
+            <div class="profile-share">
+                <div class="profile">
+                    <img src="avatar-michelle.jpg" alt="Profile Image">
+                    <div>
+                        <p><b> Michelle Appleton</b><br> 28 Juni 2020</p>
+                    </div>
+                </div>
+                <div class="share-icon" onclick="toggleShareIcons()">
+                    <img src="icon-share.svg" alt="Share">
+                    <div class="share-icons" id="shareIcons">
+                        <a href="#"><img src="icon-facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="icon-twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="icon-pinterest.svg" alt="Pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleShareIcons() {
+        var shareIcons = document.getElementById("shareIcons");
+        if (shareIcons.style.display === "flex") {
+            shareIcons.style.display = "none";
+        } else {
+            shareIcons.style.display = "flex";
+        }
+    }
+    </script>
+    </body>
+    </html>

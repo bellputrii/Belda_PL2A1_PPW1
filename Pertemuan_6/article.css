@@ -1,0 +1,126 @@
+body {
+    font-family: 'Manrope' , sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    word-spacing: 2px;
+    background-color: hsl(212, 23%, 69%);
+}
+.container {
+    width: 100%;
+    padding: 50px;
+    max-width: 900px;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.product {
+    display: flex;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 30px;
+    overflow: hidden;
+    flex: 1;
+}
+.product p{
+    font-size: 16px;
+    word-spacing: 4px;
+    line-height: 1.5;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 0px 0px 20px;
+}
+.description {
+    padding: 30px;
+}
+.profile-share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%; 
+    margin-top: 50px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile p{
+    text-align: left;
+
+}
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.share-icon {
+    background-color: hsl(215, 23%, 72%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.share-icons {
+    display: none;
+    position: absolute;
+    top: -50px;
+    transform: translateX(-50%);
+    background-color: hsl(214, 17%, 51%);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.share-icons a {
+    margin: 0 8px;
+    display: flex;
+}
+
+.share-icons a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.share-icons a:hover img {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .product {
+    flex-direction: column;
+    }
+
+    .product img {
+    border-radius: 20px 0px 0px 0px;
+    }
+
+    .profile {
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .profile img {
+    margin: 10px auto;
+    border-radius: 50px;
+    }
+
+    .profile p{
+        margin-left: 10px;
+    }
+}

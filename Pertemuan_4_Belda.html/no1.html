@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Informasi Mahasiswa TRPL'23</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="NIM">NIM:</label>
+        <input type="number" id="NIS" name="NIS"><br><br>
+    </fieldset><br>
+
+    <label for="matkul">Pilih Mata Kuliah Favorit</label>
+    <input list="daftar-matkul" id="matkul" name="matkul">
+    <datalist id="daftar-matkul">
+        <option value="Praktikum Struktur Data">
+        <option value="Praktikum Pemograman Web 1">
+        <option value="Praktikum Pemograman Berorientasi Objek">
+        <option value="Praktikum Basis Data">
+    </datalist><br><br>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50"> +
+        <input type="number" id="b" value="50"> =
+        <output name="x" for="a b"></output>
+    </form><br>
+
+    <select name="Mata Kuliah">
+        <option value="" disabled selected>Select</option>
+        <option value="Praktikum Struktur Data">Praktikum Struktur Data</option>
+        <option value="Praktikum Basis Data">Praktikum Basis Data</option>
+        <option value="Praktikum Pemograman Berorientasi Objek">Praktikum Pemograman Berorientasi Objek</option>
+        <option value="Praktikum Pemograman Web 1">Praktikum Pemograman Web 1</option>
+    </select><br><br>
+
+    <label for="Mata Kuliah">Pilihlah Mata Kuliah Favorit</label>
+    <select id="Mata Kuliah" name="Mata Kuliah">
+        <optgroup label="Mata Kuliah Teori">s
+            <option value=""disabled selected>Select</option>
+            <option value="Bahasa Inggris 2">Bahasa Inggris 2</option>
+            <option value="Statistika">Statistika</option>
+            <option value="Basis Data">Basis Data</option>
+            <option value="Aljabar Vektor dan Matriks">Aljabar Vektor dan Matriks</option>
+            <option value="Pemograman Berorientasi Objek">Pemograman Berorientasi Objek</option>
+        </optgroup>
+        <optgroup label="Mata Kuliah Praktikum>
+            <option value=""disabled selected>Select</option>
+            <option value="Praktikum Basis Data">Praktikum Basis Data</option>
+            <option value="Praktikum Struktur Data">Praktikum Struktur Data</option>
+            <option value="Praktikum Pemograman Berorientasi Objek">Praktikum Pemograman Berorientasi Objek</option>
+            <option value="Praktikum Pemograman Web 1">Praktikum Pemograman Web 1</option>
+    </select><br><br>
+
+    <form action="/action_page.php">
+        <input type="button" value="Klik Saya" onclick="alert('Tombol telah diklik!')">
+    </form>
+
+
+    
+
+</body>
+</html>

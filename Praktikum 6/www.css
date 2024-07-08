@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: lightcyan;
+}
+
+.footer {
+    background: lightcyan;
+}
+
+.aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aside2 {
+    background: lightcyan;
+}
+
+.social-icons {
+    display: none; /* Menyembunyikan ikon media sosial secara default */
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+
+    .aside1 {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside2 {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum</title>
+</head>
+<body>
+    <script>
+        console.log("Tugas Praktikum 10");
+        document.write("Tugas Praktikum P10");
+        alert('Belajar Js itu Menyenangkan');
+    </script>
+
+    <br>
+
+    <a href="#" onclick="alert('Hai kamu berhasil membuat inline Js')">Klik Disini</a>
+    
+    <br>
+    <h3>Latihan Java Script</h3>
+    <div id="hasil-output"></div>
+
+    <script>
+        var inner = document.getElementById("hasil-output");
+        
+        inner.innerHTML = "<p>Contoh Inner HTML</p>";
+    </script>
+    <br>
+    <button onclick="confirm('Belajar Javascript')">Confirm</button>
+    <button onclick="console.log('Belajar Javascript')">Log</button>
+    <br>
+    <h3>Membuat Javascript di URL Tautan</h3>
+    <a href="javascript:alert('hello world')">Link</a>
+    <br>
+    <h4>Contoh Penggunaan Prompt</h4>
+    <script type="text/javascript">
+        var nama = prompt("Masukkan Nama : ", "Belda");
+        var prodi = prompt("Program Studi yang diambil: ", "TRPL-UGM");
+        document.write("Nama: "+ nama + "<br/>");
+        document.write("Program Studi: " + prodi + "<br/>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Pixel</title>
+</head>
+<body>
+    <input type="file" id="upload" accept="image/*">
+    <br>
+    <canvas id="canvas"></canvas>
+    <br>
+    <button id="pixelate">Pixelate</button>
+    <button id="download">Download</button>
+
+    <script>
+        const upload = document.getElementById('upload');
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+        const pixelateButton = document.getElementById('pixelate');
+        const downloadButton = document.getElementById('download');
+
+        let image = new Image();
+
+        upload.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+                image.src = event.target.result;
+                image.onload = function() {
+                    canvas.width = image.width;
+                    canvas.height = image.height;
+                    context.drawImage(image, 0, 0);
+                }
+            }
+            reader.readAsDataURL(file);
+        });
+
+        pixelateButton.addEventListener('click', () => {
+            const pixelSize = 7; // Size of the pixels
+            const width = canvas.width;
+            const height = canvas.height;
+
+            // Loop through the image pixels
+            for (let y = 0; y < height; y += pixelSize) {
+                for (let x = 0; x < width; x += pixelSize) {
+                    // Get the average color of the block
+                    const imageData = context.getImageData(x, y, pixelSize, pixelSize);
+                    const avgColor = getAverageColor(imageData.data);
+
+                    // Fill the block with the average color
+                    context.fillStyle = `rgb(${avgColor.r}, ${avgColor.g}, ${avgColor.b})`;
+                    context.fillRect(x, y, pixelSize, pixelSize);
+                }
+            }
+        });
+
+        downloadButton.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.download = 'pixelated_image.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+
+        function getAverageColor(data) {
+            let r = 0, g = 0, b = 0, count = 0;
+            for (let i = 0; i < data.length; i += 4) {
+                r += data[i];
+                g += data[i + 1];
+                b += data[i + 2];
+                count++;
+            }
+            return {
+                r: Math.round(r / count),
+                g: Math.round(g / count),
+                b: Math.round(b / count)
+            };
+        }
+    </script>
+</body>
+</html>
